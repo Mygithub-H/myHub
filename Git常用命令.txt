@@ -1,0 +1,39 @@
+git基本使用
+
+列出本地标签
+	git tag --list
+查看本地标签
+	git tag
+查看远程所有标签
+	git ls-remote
+创建标签
+	git tag -a v1.0 -m "创建v1.0"
+删除本地tag
+	git tag -d v1.0
+推送本地标签到远程库
+	git push origin v1.0.1
+删除远程tag
+	git push origin :refs/tags/v1.0
+
+
+设置git账户
+	git config --global user.name 'userName'
+设置git邮箱
+	git config --global user.email 'email'
+初始化git版本库
+	git init
+增加到缓存区中
+	git add .
+增加到版本库中
+	git commit -m 'v1.0'
+查看状态
+	git status
+删除暂存区的数据
+	git rm test.txt
+连接远程仓库
+	git remote add origin 仓库的地址(https://github.com/magicdbh126/myHub.git)
+查看远程仓库
+	git remote -v
+删除远程仓库
+	git remote rm origin
+	
